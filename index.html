@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Sort Without Articles</title>
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Special+Elite" rel="stylesheet">
 </head>
 <body>
 
@@ -15,6 +16,7 @@
       display: flex;
       align-items: center;
       min-height: 100vh;
+      flex-direction: column;
     }
 
     #bands {
@@ -22,14 +24,25 @@
       font-size: 20px;
       background: white;
       width: 500px;
-      margin: auto;
+      margin: 30px auto;
       padding: 0;
       box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Special Elite', cursive;
+      letter-spacing: .8em;
+      font-size: 200%;
+      margin: 40px 0;
+      border-bottom: 5px solid black;
     }
     
     #bands li {
       border-bottom: 1px solid #efefef;
       padding: 20px;
+      list-style-type: none;
+      font-family: 'Courgette', cursive;
     }
     
     #bands li:last-child {
@@ -43,6 +56,7 @@
 
   </style>
 
+  <h1> Band Selection: </h1>
   <ul id="bands"></ul>
 
 <script>
